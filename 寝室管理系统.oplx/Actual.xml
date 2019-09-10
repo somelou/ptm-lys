@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="eBhmMzAqOZ7">
+  <start-date>2019-09-10T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <name/>
+    <type>Group</type>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>Resource 1</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+  </task>
+  <task id="t1">
+    <title>寝室管理系统</title>
+    <type>group</type>
+    <child-task idref="t6"/>
+    <child-task idref="t2"/>
+    <child-task idref="t3"/>
+    <child-task idref="t4"/>
+  </task>
+  <task id="t2">
+    <title>需求开发</title>
+    <type>group</type>
+    <child-task idref="t11"/>
+    <child-task idref="t12"/>
+    <child-task idref="t14"/>
+    <child-task idref="t15"/>
+  </task>
+  <task id="t3">
+    <title>设计</title>
+    <type>group</type>
+    <child-task idref="t16"/>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+  </task>
+  <task id="t4">
+    <title>实施</title>
+    <type>group</type>
+    <child-task idref="t26"/>
+    <child-task idref="t25"/>
+    <child-task idref="t21"/>
+    <child-task idref="t20"/>
+    <child-task idref="t32"/>
+    <child-task idref="t33"/>
+  </task>
+  <task id="t6">
+    <title>软件规划</title>
+    <type>group</type>
+    <child-task idref="t9"/>
+  </task>
+  <task id="t9">
+    <title>计划审批</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t11">
+    <title>用户需求审批</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t12">
+    <title>用户界面设计</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t14">
+    <title>编写需求规划书</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t15">
+    <title>需求验证</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t16">
+    <title>概要设计</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t17">
+    <title>数据库设计</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t18">
+    <title>设计评审</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t20">
+    <title>学生信息管理</title>
+    <type>group</type>
+    <child-task idref="t35"/>
+    <child-task idref="t36"/>
+    <child-task idref="t37"/>
+  </task>
+  <task id="t21">
+    <title>寝室楼管理</title>
+    <type>group</type>
+    <child-task idref="t22"/>
+    <child-task idref="t23"/>
+    <child-task idref="t24"/>
+    <child-task idref="t42"/>
+  </task>
+  <task id="t22">
+    <title>基本信息录入</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t23">
+    <title>基本信息获取</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t24">
+    <title>寝室楼查询</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t25">
+    <title>用户管理</title>
+    <type>group</type>
+    <child-task idref="t28"/>
+    <child-task idref="t29"/>
+    <child-task idref="t30"/>
+  </task>
+  <task id="t26">
+    <title>权限管理</title>
+    <type>group</type>
+    <child-task idref="t27"/>
+  </task>
+  <task id="t27">
+    <title>接口权限</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t28">
+    <title>添加管理员</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t29">
+    <title>管理员登陆</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t30">
+    <title>管理员信息修改</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t32">
+    <title>寝室管理</title>
+    <type>group</type>
+    <child-task idref="t38"/>
+    <child-task idref="t39"/>
+    <child-task idref="t40"/>
+    <child-task idref="t41"/>
+  </task>
+  <task id="t33">
+    <title>寝室物品管理</title>
+    <type>group</type>
+    <child-task idref="t47"/>
+    <child-task idref="t43"/>
+    <child-task idref="t44"/>
+    <child-task idref="t45"/>
+    <child-task idref="t46"/>
+  </task>
+  <task id="t35">
+    <title>关联学生与寝室</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t36">
+    <title>获取学生基本信息</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t37">
+    <title>管理学生与寝室的关联</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t38">
+    <title>基本信息录入</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t39">
+    <title>基本信息获取</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t40">
+    <title>寝室查询</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t41">
+    <title>基本信息修改</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t42">
+    <title>基本信息修改</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t43">
+    <title>寝室物品信息录入</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t44">
+    <title>信息获取</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t45">
+    <title>信息查询</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t46">
+    <title>信息修改</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t47">
+    <title>物品关联所有人</title>
+    <effort>28800</effort>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color space="srgb" r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
